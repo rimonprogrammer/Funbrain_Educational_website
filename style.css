@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins;
+    background-color: #ffff;
+}
+/*****************************************
+********* header section start ***********
+*****************************************/
+.navbar{
+    top: 0%;
+    position: sticky;
+    z-index: 3;
+    height: 70px;
+    box-shadow: 0 0 10px rgb(186, 186, 182);
+}
+.navbar-brand{
+    font-family: Rubik;
+    color: #0c96a3;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.navbar-brand:hover{
+    color: orangered;
+}
+
+.nav-item a{
+    color: #0c96a3;
+}
+.nav-item a:hover{
+    color: orangered;
+}
+.nav-item a button{
+    width: 70px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.nav-item a button:hover{
+    background-color: orangered !important;
+}
+/*****************************************
+********* header section end  ***********
+*****************************************/
+
+
+/*****************************************
+********* home Section start ***********
+*****************************************/
+.section1{
+    width: 100%;
+    min-height: 576px;
+    background: #F1FFF0;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.HomeText{
+    margin-top: 100px;
+}
+.homeSection p{
+    color:orangered;
+}
+.homeSection a{
+    text-decoration: none;
+}
+.homeSection span{
+    color: #21B573;
+}
+.homeSection h1{
+    color: #282531 !important;
+    font-size: 48px;
+}
+.homeSection h6{
+    font-size: 16px;
+}
+.homeSection .GetStartedBtn{
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+}
+.homeSection .GetStartedBtn:hover{
+    background-color: orangered !important;
+}
+.homeImg img{
+    margin-top: 100px;
+    height: 400px;
+    animation: animatetion 10s linear infinite ;
+}
+@keyframes animatetion{
+    0%{transform: translateX(30px);}
+    50%{transform: translateY(-30px);}
+    70%{transform: translateY(10px);}
+    100%{transform: translateX(30px);}
+
+}
+/*****************************************
+********* home Section end ***********
+*****************************************/
+
+
+
+/*****************************************
+******** summary section 2 start ********
+*****************************************/
+.section2{
+    margin-top: 80px;
+}
+.section2 .card{
+    cursor: pointer;
+    background: #F8FFFB;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.section2 .card:hover{
+    animation: animate 4s linear infinite;
+    box-shadow: 0 0 12px rgb(0, 213, 255);
+    -webkit-animation: animate 4s linear infinite;
+}
+.section2 .otherCard{
+    animation: animate 4s linear infinite;
+    box-shadow:0 0 10px rgb(0, 225, 233);
+    -webkit-animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{ filter:hue-rotate(0deg) ; -webkit-filter:hue-rotate(0deg) ; }
+    100%{ filter:hue-rotate(360deg) ; -webkit-filter:hue-rotate(360deg) ; }
+}
+.section2 img{
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    cursor: pointer;
+}
+.section2 .card p{
+    color: #585859; 
+}
+/*****************************************
+******** summary section 2 end ********
+*****************************************/
+
+
+/*****************************************
+***** online caurse section 3 start ******
+*****************************************/
+.section3{
+    margin-top: 100px;
+}
+.section3 h3{
+    font-size: 30px;
+    color: #413960;
+    font-size: 36px;
+}
+.section3 h3 span{
+    color: orangered;
+}
+.section3 .card{
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(192, 187, 186);
+}
+.zoom{
+    max-width: 500px;
+    min-height: 270px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.section3 .card .card-img-top{
+    max-width: 500px;
+    min-height: 270px;
+    transform: scale(1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.section3 .card .card-img-top:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.section3 .card p{
+    color: #585859;
+    font-size: 16px;  
+}
+.section3 .card  a{
+    text-decoration: none;
+}
+.section3 .button{
+    background: #21B573;
+    width: 100px;
+    cursor: pointer;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+.section3 .button:hover{
+    background-color: orangered;
+}
+.section3 .card .start-user img{
+    height: 20px;
+    cursor: pointer;
+}
+/*****************************************
+***** online caurse section 3 end ******
+*****************************************/
+
+
+
+/*****************************************
+***** testimonial section 4 start ******
+*****************************************/
+.section4{
+    margin-top: 100px;
+}
+.section4 h3{
+    font-size: 36px;
+}
+.section4 img{
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    border-radius: 100px;
+}
+.section4 p{
+    width: 600px;
+}
+/*****************************************
+***** testimonial section 4 end ******
+*****************************************/
+
+
+
+/*****************************************
+********** footer section start ***********
+*****************************************/
+hr{
+    color: #00fff2;
+}
+footer{
+    margin-top: 100px;
+    background: #282531;
+    min-height: 369px;
+}
+footer .col-md-3 a{
+    color: #d9d9d9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+footer .col-md-3 a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+footer h5{
+    color: #d9d9d9;
+}
+.Millions{
+    color: #d9d9d9;
+}
+/*****************************************
+********** footer section start ***********
+*****************************************/
